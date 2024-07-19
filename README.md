@@ -18,6 +18,7 @@
 
 ```mermaid
 classDiagram
+    direction LR
     Individu "1" --> "N" Prestation : has
 
     class Individu {
