@@ -15,3 +15,29 @@
 | - numero_individu|
 +-----------------+
 
+
+```mermaid
+classDiagram
+    Individu "1" --> "N" Prestation : has
+
+    class Individu {
+        id: int
+        nom: string
+        prenom: string
+        email: string
+        sexe: string
+        date_naissance: date
+        date_deces: date
+        navs: string
+        numero_individu: string
+    }
+
+    class Prestation {
+        date_debut_prestation: date
+        date_prestation: date
+        type_prestation: string
+        montant_prestation: float
+        numero_individu: string
+        date_fin_prest: date
+    }
+
